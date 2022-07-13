@@ -11,7 +11,7 @@ const DetallesProducto = () => {
 
 
 	const getProductoByIDAPI = async () => {
-		const rutaProductoAPI = 'https://juanbunesapirest.herokuapp.com/productos/id/'+id_producto;
+		const rutaProductoAPI = 'https://hvnjs.herokuapp.com/productos/id/'+id_producto;
 		const getProducto = await fetch(rutaProductoAPI);
         const resultProducto = await getProducto.json();
         setProducto(resultProducto);

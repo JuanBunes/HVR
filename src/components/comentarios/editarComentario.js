@@ -19,7 +19,7 @@ const EditarComentario = () => {
 	const editarComentario = async (e) => {
 		e.preventDefault();
     	const accessToken = await getAccessTokenSilently();
-    	const response = await fetch('https://juanbunesapirest.herokuapp.com/comentarios/editar/'+id_comentario, {
+    	const response = await fetch('https://hvnjs.herokuapp.com/comentarios/editar/'+id_comentario, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",

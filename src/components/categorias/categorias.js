@@ -14,7 +14,7 @@ class Categorias extends Component {
 
 	componentDidMount() {
 	  this.setState({ isLoading: true })
-	  let api_url = 'https://juanbunesapirest.herokuapp.com/categorias/';
+	  let api_url = 'https://hvnjs.herokuapp.com/categorias/';
 	  fetch(api_url)
 		  .then(res => {
 		      if(res.status >= 400) {

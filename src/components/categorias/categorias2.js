@@ -11,7 +11,7 @@ const Categorias2 = () => {
 
 
 	const getCategoriasAPI = async () => {
-		const rutaCategoriaAPI = 'https://juanbunesapirest.herokuapp.com/categorias/';
+		const rutaCategoriaAPI = 'https://hvnjs.herokuapp.com/categorias/';
 		const getCategoria = await fetch(rutaCategoriaAPI);
         const resultCategoria = await getCategoria.json();
         setCategorias(resultCategoria);

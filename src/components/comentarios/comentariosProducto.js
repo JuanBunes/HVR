@@ -19,7 +19,7 @@ const ComentariosProducto = () => {
 
 
 	const getComentariosProductoAPI = async () => {
-		const rutaComentariosProductoAPI = 'https://juanbunesapirest.herokuapp.com/comentarios/producto/'+id_producto;
+		const rutaComentariosProductoAPI = 'https://hvnjs.herokuapp.com/comentarios/producto/'+id_producto;
 		const getComentariosProducto = await fetch(rutaComentariosProductoAPI);
         const resultProducto = await getComentariosProducto.json();
         setComentarios(resultProducto);

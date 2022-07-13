@@ -35,7 +35,7 @@ const EliminarComentario = () => {
 
 	const eliminarComentario = async () => {
     	const accessToken = await getAccessTokenSilently();
-    	const response = await fetch('https://juanbunesapirest.herokuapp.com/comentarios/eliminar/'+id_comentario, {
+    	const response = await fetch('https://hvnjs.herokuapp.com/comentarios/eliminar/'+id_comentario, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json",

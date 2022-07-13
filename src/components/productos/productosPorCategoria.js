@@ -12,7 +12,7 @@ const ProductosPorCategoria = () => {
 
 
 	const getProductosByCategoriasAPI = async () => {
-		const rutaProductosByCategoriaAPI = 'https://juanbunesapirest.herokuapp.com/productos/categoria/'+categoria;
+		const rutaProductosByCategoriaAPI = 'https://hvnjs.herokuapp.com/productos/categoria/'+categoria;
 		const getProductosByCategoria = await fetch(rutaProductosByCategoriaAPI);
         const resultProductosByCategoria = await getProductosByCategoria.json();
         if(getProductosByCategoria.status == 404) {

@@ -14,7 +14,7 @@ class ProductosCards extends Component {
 
 	componentDidMount() {
 	  this.setState({ isLoading: true })
-	  let api_url = 'https://juanbunesapirest.herokuapp.com/productos/';
+	  let api_url = 'https://hvnjs.herokuapp.com/productos';
 	  fetch(api_url)
 		  .then(res => {
 		      if(res.status >= 400) {
